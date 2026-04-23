@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — Кадр</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Кадр</a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Запись</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn">Записаться</a>
+      <button class="burger">☰</button>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="catalog-page">
+    <div class="container">
+
+      <h1>Каталог фотосессий</h1>
+
+      <!-- кнопка для мобилки -->
+      <button class="filters-toggle">Показать фильтры</button>
+
+      <div class="catalog-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="filters">
+          <h3>Фильтры</h3>
+
+          <div class="filter-group">
+            <p>Тип съёмки</p>
+            <label><input type="checkbox"> Портретная</label>
+            <label><input type="checkbox"> Семейная</label>
+            <label><input type="checkbox"> Love Story</label>
+          </div>
+
+          <div class="filter-group">
+            <p>Цена (€)</p>
+            <input type="number" placeholder="От">
+            <input type="number" placeholder="До">
+          </div>
+
+          <button class="btn">Применить</button>
+          <button class="btn btn-reset">Сбросить</button>
+        </aside>
+
+        <!-- CONTENT -->
+        <section class="catalog-content">
+
+          <!-- сортировка -->
+          <div class="catalog-top">
+            <select>
+              <option>Сортировка</option>
+              <option>По цене</option>
+              <option>По популярности</option>
+            </select>
+
+            <span>Найдено: 8</span>
+          </div>
+
+          <!-- карточки -->
+          <div class="catalog-grid">
+
+            <div class="catalog-card">
+  <img src="images/portret.jpg" alt="Портретная съёмка">
+
+  <div class="catalog-card__content">
+    <h3>Портретная</h3>
+    <p>Индивидуальная съёмка</p>
+
+    <div class="catalog-card__bottom">
+      <span class="price">15000₽</span>
+      <a href="#" class="btn">Заказать</a>
+    </div>
+  </div>
+</div>
+            <div class="catalog-card">
+  <img src="images/family.jpg" alt="Семейная съёмка">
+
+  <div class="catalog-card__content">
+    <h3>Семейная</h3>
+    <p>Теплые кадры</p>
+
+    <div class="catalog-card__bottom">
+      <span class="price">25000₽</span>
+      <a href="#" class="btn">Заказать</a>
+    </div>
+  </div>
+</div>
+            <div class="catalog-card">
+  <img src="images/lovestory.jpg" alt="Love Story">
+
+  <div class="catalog-card__content">
+    <h3>Love Story</h3>
+    <p>Для пары</p>
+
+    <div class="catalog-card__bottom">
+      <span class="price">20000₽</span>
+      <a href="#" class="btn">Заказать</a>
+    </div>
+  </div>
+</div>
+            <div class="catalog-card">
+  <img src="images/kids.jpg" alt="Детская съёмка">
+
+  <div class="catalog-card__content">
+    <h3>Детская</h3>
+    <p>Яркие эмоции</p>
+
+    <div class="catalog-card__bottom">
+      <span class="price">10000₽</span>
+      <a href="#" class="btn">Заказать</a>
+    </div>
+  </div>
+</div>
+
+            <div class="catalog-card">
+  <img src="images/biznes.jpg" alt="Бизнес съёмка">
+
+  <div class="catalog-card__content">
+    <h3>Бизнес</h3>
+    <p>Для резюме</p>
+
+    <div class="catalog-card__bottom">
+      <span class="price">30000₽</span>
+      <a href="#" class="btn">Заказать</a>
+    </div>
+  </div>
+</div>
+           <div class="catalog-card">
+  <img src="images/fashion.jpg" alt="Fashion съёмка">
+
+  <div class="catalog-card__content">
+    <h3>Fashion</h3>
+    <p>Стильные кадры</p>
+
+    <div class="catalog-card__bottom">
+      <span class="price">15000₽</span>
+      <a href="#" class="btn">Заказать</a>
+    </div>
+  </div>
+</div>
+
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <h3>Кадр</h3>
+        <p>Фотостудия</p>
+      </div>
+
+      <div>
+        <h4>Контакты</h4>
+        <p>+123456789</p>
+        <p>email@mail.com</p>
+      </div>
+    </div>
+
+    <p class="footer__copy">© 2026 Кадр</p>
+  </footer>
+
+</body>
+</html>
