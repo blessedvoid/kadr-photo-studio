@@ -1,7 +1,60 @@
+/* RESET + NORMALIZE */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Убираем стандартные стили */
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Картинки */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Формы */
+input, button, textarea, select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Кнопки */
+button {
+  cursor: pointer;
+}
+
+/* Списки */
+ul, ol {
+  list-style: none;
+}
+
+/* Ссылки */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Таблицы */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Запрет скролла при меню */
+.no-scroll {
+  overflow: hidden;
 }
